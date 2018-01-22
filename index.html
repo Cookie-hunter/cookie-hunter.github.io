@@ -139,6 +139,71 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-12.PHP学习-类的构建及实例化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/22/12.PHP学习-类的构建及实例化/">&#39;PHP学习-类的构建及实例化&#39;</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/22/12.PHP学习-类的构建及实例化/" class="archive-article-date">
+  	<time datetime="2018-01-22T02:53:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>新建文件夹classes，在内部新建两个PHP文件：<br>1.Hello.php;<br>2.index.php;</p>
+<p>在Hello.php中新建两个类1.Hello;2.Desktop;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">class  Hello&#123;</span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">sayHello</span></span>()&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"hello&lt;br&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Desktop&#123;</span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">Work</span></span>()&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"work&lt;br&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在index.php中引导Hello.php文件，并实例化两个对象：<br>1.$b;<br>2.$d;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">require_once <span class="string">'Hello.php'</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$b</span> = new Hello();</span><br><span class="line"><span class="variable">$b</span>-&gt;sayHello();</span><br><span class="line"></span><br><span class="line"><span class="variable">$d</span> = new Desktop();</span><br><span class="line"><span class="variable">$d</span>-&gt;Work();</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/22/12.PHP学习-类的构建及实例化/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-11.PHP学习-include &amp; require" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -683,69 +748,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/01/20/3.初探php/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2.主题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/2.主题/">&#39;主题&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/20/2.主题/" class="archive-article-date">
-  	<time datetime="2018-01-20T03:34:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>完成主题修改</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/2.主题/">展开全文 >></a>
         </p>
       
 
