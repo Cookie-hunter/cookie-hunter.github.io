@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Cookie-hunter&#39;s blog</title>
+  <title>&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39; | Cookie-hunter&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cookie-hunter&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
+<meta property="og:url" content="http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/index.html">
 <meta property="og:site_name" content="Cookie-hunter&#39;s blog">
+<meta property="og:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
+<meta property="og:updated_time" content="2018-01-31T06:17:57.697Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cookie-hunter&#39;s blog">
+<meta name="twitter:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
+<meta name="twitter:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
   
     <link rel="alternative" href="/atom.xml" title="Cookie-hunter&#39;s blog" type="application/atom+xml">
   
@@ -137,16 +141,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-20.PHP学习-ctf-变异凯撒-chr();ord();substr()" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-20.PHP学习-ctf-变异凯撒-chr();ord();substr()" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/">&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;</a>
+    <h1 class="article-title" itemprop="name">
+      &#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;
     </h1>
   
 
@@ -174,6 +176,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -181,16 +204,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/27/19.PHP学习-POST、Cookie、Session/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">&#39;PHP学习-POST、Cookie、Session&#39;</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -210,715 +292,14 @@
 
 
 
-
-  
-    <article id="post-19.PHP学习-POST、Cookie、Session" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/27/19.PHP学习-POST、Cookie、Session/">&#39;PHP学习-POST、Cookie、Session&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/27/19.PHP学习-POST、Cookie、Session/" class="archive-article-date">
-  	<time datetime="2018-01-27T11:41:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>POST、Cookie、Session详解</p>
-<p>菜鸟教程：1、<a href="http://www.runoob.com/php/php-post.html" target="_blank" rel="noopener">http://www.runoob.com/php/php-post.html</a><br>          2、<a href="http://www.runoob.com/php/php-cookies.html" target="_blank" rel="noopener">http://www.runoob.com/php/php-cookies.html</a><br>          3、<a href="http://www.runoob.com/php/php-sessions.html" target="_blank" rel="noopener">http://www.runoob.com/php/php-sessions.html</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/27/19.PHP学习-POST、Cookie、Session/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-18.PHP学习-GET" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/25/18.PHP学习-GET/">&#39;.PHP学习-GET&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/25/18.PHP学习-GET/" class="archive-article-date">
-  	<time datetime="2018-01-25T07:18:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="GET-变量"><a href="#GET-变量" class="headerlink" title="$_GET 变量"></a>$_GET 变量</h3><p>预定义的 $_GET 变量用于收集来自 method=”get” 的表单中的值。</p>
-<p>从带有 GET 方法的表单发送的信息，对任何人都是可见的（会显示在浏览器的地址栏），<br>并且对发送信息的量也有限制。</p>
-<h3 id="何时使用-method-”get”？"><a href="#何时使用-method-”get”？" class="headerlink" title="何时使用 method=”get”？"></a>何时使用 method=”get”？</h3><p>在 HTML 表单中使用 method=”get” 时，所有的变量名和值都会显示在 URL 中。</p>
-<p>注释：所以在发送密码或其他敏感信息时，不应该使用这个方法！</p>
-<p>然而，正因为变量显示在 URL 中，因此可以在收藏夹中收藏该页面。在某些情况下，这是很有用的。</p>
-<p>注释：HTTP GET 方法不适合大型的变量值。它的值是不能超过 2000 个字符的。</p>
-<h3 id="gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt"><a href="#gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt-gt" class="headerlink" title="&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;"></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</h3><p>创建一个文件夹：Welcome,创立两个文件<br>1.welcome.html<br>2.welcome .php</p>
-<p>一.在welcome.html中写入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;welcome&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=<span class="string">"welcome.php"</span> method=<span class="string">"get"</span>&gt;            /指向<span class="string">"welcome.php"</span>,方法：GET</span><br><span class="line">    &lt;input name=<span class="string">"name"</span> <span class="built_in">type</span>=<span class="string">"text"</span>&gt;                 //文本框</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> value=<span class="string">"提交"</span>&gt;               //提交按钮</span><br><span class="line"></span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
-<p>二.在welcome.php中写入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;boay&gt;</span><br><span class="line">&lt;?php</span><br><span class="line">//要求文本框不能为空：判断name是否为空</span><br><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$_GET</span>[<span class="string">'name'</span>])&amp;&amp;<span class="variable">$_GET</span>[<span class="string">'name'</span>])&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'Welcome  '</span>.<span class="variable">$_GET</span>[<span class="string">'name'</span>];</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"请输入字符"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br><span class="line">&lt;/boay&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/25/18.PHP学习-GET/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-17.PHP学习-简易表单" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/25/17.PHP学习-简易表单/">&#39;PHP学习-简易表单&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/25/17.PHP学习-简易表单/" class="archive-article-date">
-  	<time datetime="2018-01-25T06:49:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;简易表单&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=<span class="string">"server.php"</span>&gt;                          //创立表单，指向提交到的服务器<span class="string">'server.php'</span></span><br><span class="line">    名字：&lt;input name=<span class="string">"name"</span> <span class="built_in">type</span>=<span class="string">"text"</span>&gt;&lt;br&gt;      //创立文本框：名字</span><br><span class="line">    爱好：&lt;input name=<span class="string">"hobby"</span> <span class="built_in">type</span>=<span class="string">"text"</span>&gt;&lt;br&gt;     //创立文本框：爱好</span><br><span class="line"></span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> value=<span class="string">"提交"</span>&gt;            //创立提交按钮：提交</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/25/17.PHP学习-简易表单/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-16.PHP学习-水印" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/25/16.PHP学习-水印/">&#39;PHP学习-水印&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/25/16.PHP学习-水印/" class="archive-article-date">
-  	<time datetime="2018-01-25T06:31:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>输出图片，上标有“Cookie-hunter”字样；<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">//导入图像文件</span><br><span class="line"><span class="variable">$img</span> = imagecreatefromjpeg(<span class="string">'271960.jpg'</span>);</span><br><span class="line">//设置水印：对象，字体大小，水印坐标X，水印坐标Y，水印内容，水印颜色</span><br><span class="line">imagestring(<span class="variable">$img</span>,5,300,300,<span class="string">'Cookie-hunter'</span>,imagecolorallocate(<span class="variable">$img</span>,255,0,0));</span><br><span class="line">//输出为png格式</span><br><span class="line">header(<span class="string">'Content-type: image/png'</span>);</span><br><span class="line">imagepng(<span class="variable">$img</span>);</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/25/16.PHP学习-水印/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-15.PHP学习-生成图片" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/15.PHP学习-生成图片/">&#39;PHP学习-生成图片&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/24/15.PHP学习-生成图片/" class="archive-article-date">
-  	<time datetime="2018-01-24T08:09:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="variable">$img</span> = imagecreate(400,300);                                        //创建图片规格：宽，高</span><br><span class="line">imagecolorallocate(<span class="variable">$img</span>,255,255,255);                               //创建背景颜色：白色（rgb通道）</span><br><span class="line">//创建椭圆:设置中心的坐标X；设置中心的坐标Y；设置宽；设置高；设置颜色；</span><br><span class="line">imageellipse(<span class="variable">$img</span>,200,200,50,50,imagecolorallocate(<span class="variable">$img</span>,255,0,0));</span><br><span class="line">//设置头：指明文件输出格式，不设置则以文本信息输出；</span><br><span class="line">header(<span class="string">'Content-type: image/png'</span>);</span><br><span class="line">imagepng(<span class="variable">$img</span>);//imagepng():输出png格式；</span><br></pre></td></tr></table></figure>
-<h3 id="PHP手册：GD-和图像处理-函数"><a href="#PHP手册：GD-和图像处理-函数" class="headerlink" title="PHP手册：GD 和图像处理 函数"></a>PHP手册：GD 和图像处理 函数</h3><pre><code>gd_info — 取得当前安装的 GD 库的信息
-getimagesize — 取得图像大小
-getimagesizefromstring — 从字符串中获取图像尺寸信息
-image_type_to_extension — 取得图像类型的文件后缀
-image_type_to_mime_type — 取得 getimagesize，exif_read_data，exif_thumbnail，exif_imagetype 所返回的图像类型的 MIME 类型
-image2wbmp — 以 WBMP 格式将图像输出到浏览器或文件
-imageaffine — 返回经过仿射变换后的图像，剪切区域可选
-imageaffinematrixconcat — Concatenate two affine transformation matrices
-imageaffinematrixget — Get an affine transformation matrix
-imagealphablending — 设定图像的混色模式
-imageantialias — 是否使用抗锯齿（antialias）功能
-imagearc — 画椭圆弧
-imagebmp — Output a BMP image to browser or file
-imagechar — 水平地画一个字符
-imagecharup — 垂直地画一个字符
-imagecolorallocate — 为一幅图像分配颜色
-imagecolorallocatealpha — 为一幅图像分配颜色 + alpha
-imagecolorat — 取得某像素的颜色索引值
-imagecolorclosest — 取得与指定的颜色最接近的颜色的索引值
-imagecolorclosestalpha — 取得与指定的颜色加透明度最接近的颜色
-imagecolorclosesthwb — 取得与给定颜色最接近的色度的黑白色的索引
-imagecolordeallocate — 取消图像颜色的分配
-imagecolorexact — 取得指定颜色的索引值
-imagecolorexactalpha — 取得指定的颜色加透明度的索引值
-imagecolormatch — 使一个图像中调色板版本的颜色与真彩色版本更能匹配
-imagecolorresolve — 取得指定颜色的索引值或有可能得到的最接近的替代值
-imagecolorresolvealpha — 取得指定颜色 + alpha 的索引值或有可能得到的最接近的替代值
-imagecolorset — 给指定调色板索引设定颜色
-imagecolorsforindex — 取得某索引的颜色
-imagecolorstotal — 取得一幅图像的调色板中颜色的数目
-imagecolortransparent — 将某个颜色定义为透明色
-imageconvolution — 用系数 div 和 offset 申请一个 3x3 的卷积矩阵
-imagecopy — 拷贝图像的一部分
-imagecopymerge — 拷贝并合并图像的一部分
-imagecopymergegray — 用灰度拷贝并合并图像的一部分
-imagecopyresampled — 重采样拷贝部分图像并调整大小
-imagecopyresized — 拷贝部分图像并调整大小
-imagecreate — 新建一个基于调色板的图像
-imagecreatefrombmp — 由文件或 URL 创建一个新图象。
-imagecreatefromgd2 — 从 GD2 文件或 URL 新建一图像
-imagecreatefromgd2part — 从给定的 GD2 文件或 URL 中的部分新建一图像
-imagecreatefromgd — 从 GD 文件或 URL 新建一图像
-imagecreatefromgif — 由文件或 URL 创建一个新图象。
-imagecreatefromjpeg — 由文件或 URL 创建一个新图象。
-imagecreatefrompng — 由文件或 URL 创建一个新图象。
-imagecreatefromstring — 从字符串中的图像流新建一图像
-imagecreatefromwbmp — 由文件或 URL 创建一个新图象。
-imagecreatefromwebp — 由文件或 URL 创建一个新图象。
-imagecreatefromxbm — 由文件或 URL 创建一个新图象。
-imagecreatefromxpm — 由文件或 URL 创建一个新图象。
-imagecreatetruecolor — 新建一个真彩色图像
-imagecrop — Crop an image to the given rectangle
-imagecropauto — Crop an image automatically using one of the available modes
-imagedashedline — 画一虚线
-imagedestroy — 销毁一图像
-imageellipse — 画一个椭圆
-imagefill — 区域填充
-imagefilledarc — 画一椭圆弧且填充
-imagefilledellipse — 画一椭圆并填充
-imagefilledpolygon — 画一多边形并填充
-imagefilledrectangle — 画一矩形并填充
-imagefilltoborder — 区域填充到指定颜色的边界为止
-imagefilter — 对图像使用过滤器
-imageflip — Flips an image using a given mode
-imagefontheight — 取得字体高度
-imagefontwidth — 取得字体宽度
-imageftbbox — 给出一个使用 FreeType 2 字体的文本框
-imagefttext — 使用 FreeType 2 字体将文本写入图像
-imagegammacorrect — 对 GD 图像应用 gamma 修正
-imagegd2 — 将 GD2 图像输出到浏览器或文件
-imagegd — 将 GD 图像输出到浏览器或文件
-imagegetclip — Get the clipping rectangle
-imagegif — 输出图象到浏览器或文件。
-imagegrabscreen — Captures the whole screen
-imagegrabwindow — Captures a window
-imageinterlace — 激活或禁止隔行扫描
-imageistruecolor — 检查图像是否为真彩色图像
-imagejpeg — 输出图象到浏览器或文件。
-imagelayereffect — 设定 alpha 混色标志以使用绑定的 libgd 分层效果
-imageline — 画一条线段
-imageloadfont — 载入一新字体
-imageopenpolygon — Draws an open polygon
-imagepalettecopy — 将调色板从一幅图像拷贝到另一幅
-imagepalettetotruecolor — Converts a palette based image to true color
-imagepng — 以 PNG 格式将图像输出到浏览器或文件
-imagepolygon — 画一个多边形
-imagepsbbox — 给出一个使用 PostScript Type1 字体的文本方框
-imagepsencodefont — 改变字体中的字符编码矢量
-imagepsextendfont — 扩充或精简字体
-imagepsfreefont — 释放一个 PostScript Type 1 字体所占用的内存
-imagepsloadfont — 从文件中加载一个 PostScript Type 1 字体
-imagepsslantfont — 倾斜某字体
-imagepstext — 用 PostScript Type1 字体把文本字符串画在图像上
-imagerectangle — 画一个矩形
-imageresolution — Get or set the resolution of the image
-imagerotate — 用给定角度旋转图像
-imagesavealpha — 设置标记以在保存 PNG 图像时保存完整的 alpha 通道信息（与单一透明色相反）
-imagescale — Scale an image using the given new width and height
-imagesetbrush — 设定画线用的画笔图像
-imagesetclip — Set the clipping rectangle
-imagesetinterpolation — Set the interpolation method
-imagesetpixel — 画一个单一像素
-imagesetstyle — 设定画线的风格
-imagesetthickness — 设定画线的宽度
-imagesettile — 设定用于填充的贴图
-imagestring — 水平地画一行字符串
-imagestringup — 垂直地画一行字符串
-imagesx — 取得图像宽度
-imagesy — 取得图像高度
-imagetruecolortopalette — 将真彩色图像转换为调色板图像
-imagettfbbox — 取得使用 TrueType 字体的文本的范围
-imagettftext — 用 TrueType 字体向图像写入文本
-imagetypes — 返回当前 PHP 版本所支持的图像类型
-imagewbmp — 以 WBMP 格式将图像输出到浏览器或文件
-imagewebp — 将 WebP 格式的图像输出到浏览器或文件
-imagexbm — 将 XBM 图像输出到浏览器或文件
-iptcembed — 将二进制 IPTC 数据嵌入到一幅 JPEG 图像中
-iptcparse — 将二进制 IPTC 块解析为单个标记
-jpeg2wbmp — 将 JPEG 图像文件转换为 WBMP 图像文件
-png2wbmp — 将 PNG 图像文件转换为 WBMP 图像文件
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/24/15.PHP学习-生成图片/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-14.PHP学习-json格式数据的操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/14.PHP学习-json格式数据的操作/">&#39;PHP学习-json格式数据的操作&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/24/14.PHP学习-json格式数据的操作/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:36:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="json-encode-与-json-decode"><a href="#json-encode-与-json-decode" class="headerlink" title="json_encode() 与 json_decode();"></a>json_encode() 与 json_decode();</h3><p>函数                描述<br>json_encode         对变量进行 JSON 编码<br>json_decode            对 JSON 格式的字符串进行解码，转换为 PHP 变量<br>json_last_error        返回最后发生的错误</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * JSON format                                               //json数据类型</span><br><span class="line"> * 数组：1.[1,2,3]                                           //普通数组</span><br><span class="line"> *       2.[1,2,3,<span class="string">"hello"</span>,<span class="string">"world]                            //混合类型数组</span></span><br><span class="line"><span class="string"> *       3.[1.2.3."</span>hello<span class="string">","</span>world<span class="string">",[4,5,6,]]                  //数组中含有数组</span></span><br><span class="line"><span class="string"> *       4.[1.2.3."</span>hello<span class="string">","</span>world<span class="string">",[4,5,6,],&#123;"</span>h<span class="string">":"</span>hello<span class="string">"&#125;]   //数组中含有数组与对象</span></span><br><span class="line"><span class="string"> *</span></span><br><span class="line"><span class="string"> * 对象：1.&#123;"</span>H<span class="string">":"</span>hello<span class="string">"&#125;                                      //普通对象</span></span><br><span class="line"><span class="string"> *       2.&#123;"</span>H<span class="string">":"</span>hello<span class="string">",[1.2.3]&#125;                            //含有数组的对象</span></span><br><span class="line"><span class="string"> */</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">//encode &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;        //其他类型转JSON类型</span></span><br><span class="line"><span class="string"><span class="variable">$arr</span>= array(1,2,3,"</span>hello<span class="string">",array("</span>h<span class="string">"=&gt;"</span>hello<span class="string">"));             //1</span></span><br><span class="line"><span class="string">print_r(<span class="variable">$arr</span>);</span></span><br><span class="line"><span class="string">echo "</span>&lt;br&gt;&lt;br&gt;<span class="string">";</span></span><br><span class="line"><span class="string">echo json_encode(<span class="variable">$arr</span>);</span></span><br><span class="line"><span class="string">echo "</span>&lt;br&gt;&lt;br&gt;<span class="string">";</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"><span class="variable">$obj</span>=array("</span>h<span class="string">"=&gt;"</span>hello<span class="string">",array(1,2,3));                      //2</span></span><br><span class="line"><span class="string">print_r(<span class="variable">$obj</span>);</span></span><br><span class="line"><span class="string">echo "</span>&lt;br&gt;&lt;br&gt;<span class="string">";</span></span><br><span class="line"><span class="string">echo json_encode(<span class="variable">$obj</span>);</span></span><br><span class="line"><span class="string">echo "</span>&lt;br&gt;&lt;br&gt;<span class="string">";</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">//decode &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;        //JSON类型转其他类型</span></span><br><span class="line"><span class="string"><span class="variable">$jsonStr</span> = '&#123;"</span>h<span class="string">":"</span>hello<span class="string">","</span>0<span class="string">":[1,2,3]&#125;';</span></span><br><span class="line"><span class="string"><span class="variable">$abc</span> = json_decode(<span class="variable">$jsonStr</span>);</span></span><br><span class="line"><span class="string">print_r(<span class="variable">$abc</span>);</span></span><br></pre></td></tr></table></figure>
-<p>输出：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Array ( [0] =&gt; 1 [1] =&gt; 2 [2] =&gt; 3 [3] =&gt; hello [4] =&gt; Array ( [h] =&gt; hello ) )</span><br><span class="line"></span><br><span class="line">[1,2,3,<span class="string">"hello"</span>,&#123;<span class="string">"h"</span>:<span class="string">"hello"</span>&#125;]</span><br><span class="line"></span><br><span class="line">Array ( [h] =&gt; hello [0] =&gt; Array ( [0] =&gt; 1 [1] =&gt; 2 [2] =&gt; 3 ) )</span><br><span class="line"></span><br><span class="line">&#123;<span class="string">"h"</span>:<span class="string">"hello"</span>,<span class="string">"0"</span>:[1,2,3]&#125;</span><br><span class="line"></span><br><span class="line">stdClass Object ( [h] =&gt; hello [0] =&gt; Array ( [0] =&gt; 1 [1] =&gt; 2 [2] =&gt; 3 ) )</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/24/14.PHP学习-json格式数据的操作/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-13.PHP学习-时间与日期" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/13.PHP学习-时间与日期/">&#39;PHP学习-时间与日期&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/24/13.PHP学习-时间与日期/" class="archive-article-date">
-  	<time datetime="2018-01-24T07:01:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> date_default_timezone_get();               //获得默认时区</span><br><span class="line">date_default_timezone_set(<span class="string">'Asia/Shanghai'</span>);     //设置当前时区</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'&lt;br&gt;&lt;br&gt;'</span>;</span><br><span class="line"><span class="built_in">echo</span> date_default_timezone_get();               //获得修改后时区</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'&lt;br&gt;&lt;br&gt;'</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> date(<span class="string">'Y-m-d H:i:s'</span>);                       //输出所设时区的当前时间</span><br></pre></td></tr></table></figure>
-<p>输出结果<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Europe/Paris</span><br><span class="line"></span><br><span class="line">Asia/Shanghai</span><br><span class="line"></span><br><span class="line">2018-01-24 14:53:04</span><br></pre></td></tr></table></figure></p>
-<h3 id="PHP-date-函数：格式字串可以识别以下-format-参数的字符串"><a href="#PHP-date-函数：格式字串可以识别以下-format-参数的字符串" class="headerlink" title="PHP date()函数：格式字串可以识别以下 format 参数的字符串"></a>PHP date()函数：格式字串可以识别以下 format 参数的字符串</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">日 	--- 	---</span><br><span class="line">d 	月份中的第几天，有前导零的 2 位数字 	01 到 31</span><br><span class="line">D 	星期中的第几天，文本表示，3 个字母 	Mon 到 Sun</span><br><span class="line">j 	月份中的第几天，没有前导零 	1 到 31</span><br><span class="line">l（<span class="string">"L"</span>的小写字母） 	星期几，完整的文本格式 	Sunday 到 Saturday</span><br><span class="line">N 	ISO-8601 格式数字表示的星期中的第几天（PHP 5.1.0 新加） 	1（表示星期一）到 7（表示星期天）</span><br><span class="line">S 	每月天数后面的英文后缀，2 个字符 	st，nd，rd 或者 th。可以和 j 一起用</span><br><span class="line">w 	星期中的第几天，数字表示 	0（表示星期天）到 6（表示星期六）</span><br><span class="line">z 	年份中的第几天 	0 到 365</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">星期 	--- 	---</span><br><span class="line">W 	ISO-8601 格式年份中的第几周，每周从星期一开始（PHP 4.1.0 新加的） 	例如：42（当年的第 42 周）</span><br><span class="line">月 	--- 	---</span><br><span class="line">F 	月份，完整的文本格式，例如 January 或者 March 	January 到 December</span><br><span class="line">m 	数字表示的月份，有前导零 	01 到 12</span><br><span class="line">M 	三个字母缩写表示的月份 	Jan 到 Dec</span><br><span class="line">n 	数字表示的月份，没有前导零 	1 到 12</span><br><span class="line">t 	给定月份所应有的天数 	28 到 31</span><br><span class="line">年 	--- 	---</span><br><span class="line">L 	是否为闰年 	如果是闰年为 1，否则为 0</span><br><span class="line">o 	ISO-8601 格式年份数字。这和 Y 的值相同，只除了如果 ISO 的星期数（W）属于前一年或下一年，则用那一年。（PHP 5.1.0 新加） 	Examples: 1999 or 2003</span><br><span class="line">Y 	4 位数字完整表示的年份 	例如：1999 或 2003</span><br><span class="line">y 	2 位数字表示的年份 	例如：99 或 03</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">时间 	--- 	---</span><br><span class="line">a 	小写的上午和下午值 	am 或 pm</span><br><span class="line">A 	大写的上午和下午值 	AM 或 PM</span><br><span class="line">B 	Swatch Internet 标准时 	000 到 999</span><br><span class="line">g 	小时，12 小时格式，没有前导零 	1 到 12</span><br><span class="line">G 	小时，24 小时格式，没有前导零 	0 到 23</span><br><span class="line">h 	小时，12 小时格式，有前导零 	01 到 12</span><br><span class="line">H 	小时，24 小时格式，有前导零 	00 到 23</span><br><span class="line">i 	有前导零的分钟数 	00 到 59&gt;</span><br><span class="line">s 	秒数，有前导零 	00 到 59&gt;</span><br><span class="line">u 	毫秒 （PHP 5.2.2 新加）。需要注意的是 date() 函数总是返回 000000 因为它只接受 <span class="built_in">integer</span> 参数， 而 DateTime::format() 才支持毫秒。 	示例: 654321</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">时区 	--- 	---</span><br><span class="line">e 	时区标识（PHP 5.1.0 新加） 	例如：UTC，GMT，Atlantic/Azores</span><br><span class="line">I 	是否为夏令时 	如果是夏令时为 1，否则为 0</span><br><span class="line">O 	与格林威治时间相差的小时数 	例如：+0200</span><br><span class="line">P 	与格林威治时间（GMT）的差别，小时和分钟之间有冒号分隔（PHP 5.1.3 新加） 	例如：+02:00</span><br><span class="line">T 	本机所在的时区 	例如：EST，MDT（【译者注】在 Windows 下为完整文本格式，例如<span class="string">"Eastern Standard Time"</span>，中文版会显示<span class="string">"中国标准时间"</span>）。</span><br><span class="line">Z 	时差偏移量的秒数。UTC 西边的时区偏移量总是负的，UTC 东边的时区偏移量总是正的。 	-43200 到 43200</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">完整的日期／时间 	--- 	---</span><br><span class="line">c 	ISO 8601 格式的日期（PHP 5 新加） 	2004-02-12T15:19:21+00:00</span><br><span class="line">r 	RFC 822 格式的日期 	例如：Thu, 21 Dec 2000 16:01:07 +0200</span><br><span class="line">U 	从 Unix 纪元（January 1 1970 00:00:00 GMT）开始至今的秒数 	参见 time()</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/24/13.PHP学习-时间与日期/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-12.PHP学习-类的构建及实例化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/22/12.PHP学习-类的构建及实例化/">&#39;PHP学习-类的构建及实例化&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/22/12.PHP学习-类的构建及实例化/" class="archive-article-date">
-  	<time datetime="2018-01-22T02:53:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>新建文件夹classes，在内部新建两个PHP文件：<br>1.Hello.php;<br>2.index.php;</p>
-<p>在Hello.php中新建两个类1.Hello;2.Desktop;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">class  Hello&#123;</span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">sayHello</span></span>()&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"hello&lt;br&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Desktop&#123;</span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">Work</span></span>()&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"work&lt;br&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>在index.php中引导Hello.php文件，并实例化两个对象：<br>1.$b;<br>2.$d;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">require_once <span class="string">'Hello.php'</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$b</span> = new Hello();</span><br><span class="line"><span class="variable">$b</span>-&gt;sayHello();</span><br><span class="line"></span><br><span class="line"><span class="variable">$d</span> = new Desktop();</span><br><span class="line"><span class="variable">$d</span>-&gt;Work();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/22/12.PHP学习-类的构建及实例化/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-11.PHP学习-include &amp; require" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/21/11.PHP学习-include & require/">&#39;PHP学习-include &amp; require&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/21/11.PHP学习-include & require/" class="archive-article-date">
-  	<time datetime="2018-01-21T12:28:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="include与require的区别："><a href="#include与require的区别：" class="headerlink" title="include与require的区别："></a>include与require的区别：</h3><p>include 与 require都是用来引用文件，但二者之间存在差异；<br>从字面理解，一个是“包含”而另一个是“要求”，<br>因而可以看出他们对所引用的文件的依赖程度是不同的；<br>当缺失该文件时include表现为警告，而require表现为错误；</p>
-<h3 id="include-amp-require-PHP文件的引用"><a href="#include-amp-require-PHP文件的引用" class="headerlink" title="include &amp; require :PHP文件的引用"></a>include &amp; require :PHP文件的引用</h3><p>一.新建一文件夹，其下新建两个PHP文件：<br>1.index.PHP;<br>2.lib.PHP;</p>
-<p>二.lib.PHP内书写函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">sayHello</span></span>()&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'Hello PHP'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>三..index.PHP内分别书写    require ‘lib.PHP’;    include ‘lib.PHP’;<br>    分别调用查看实验结果；<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">//require <span class="string">'lib.PHP'</span>;				//require方式</span><br><span class="line">include <span class="string">'lib.PHP'</span>;					//include方式</span><br><span class="line">sayHello();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/21/11.PHP学习-include & require/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -941,8 +322,8 @@ png2wbmp — 将 PNG 图像文件转换为 WBMP 图像文件
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
