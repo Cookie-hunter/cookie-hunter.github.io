@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39; | Cookie-hunter&#39;s blog</title>
+  <title>&#39;c++与c-strcpy()与memset()&#39; | Cookie-hunter&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
+  <meta name="description" content="来源：菜鸟教程 strcpy()1.C 标准库 - 2.描述    C 库函数 char strcpy(char dest, const char src) 把 src 所指向的字符串复制到 dest。2.声明    下面是 strcpy() 函数的声明。    char strcpy(char dest, const char src)3.参数    dest – 指向用于存储复制内容的目标数组">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
-<meta property="og:url" content="http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/index.html">
+<meta property="og:title" content="&#39;c++与c-strcpy()与memset()&#39;">
+<meta property="og:url" content="http://yoursite.com/2018/01/31/21.c++与c-strcpy()与memset()/index.html">
 <meta property="og:site_name" content="Cookie-hunter&#39;s blog">
-<meta property="og:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
-<meta property="og:updated_time" content="2018-01-31T06:17:57.697Z">
+<meta property="og:description" content="来源：菜鸟教程 strcpy()1.C 标准库 - 2.描述    C 库函数 char strcpy(char dest, const char src) 把 src 所指向的字符串复制到 dest。2.声明    下面是 strcpy() 函数的声明。    char strcpy(char dest, const char src)3.参数    dest – 指向用于存储复制内容的目标数组">
+<meta property="og:updated_time" content="2018-01-31T11:46:46.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
-<meta name="twitter:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
+<meta name="twitter:title" content="&#39;c++与c-strcpy()与memset()&#39;">
+<meta name="twitter:description" content="来源：菜鸟教程 strcpy()1.C 标准库 - 2.描述    C 库函数 char strcpy(char dest, const char src) 把 src 所指向的字符串复制到 dest。2.声明    下面是 strcpy() 函数的声明。    char strcpy(char dest, const char src)3.参数    dest – 指向用于存储复制内容的目标数组">
   
     <link rel="alternative" href="/atom.xml" title="Cookie-hunter&#39;s blog" type="application/atom+xml">
   
@@ -141,37 +141,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-20.PHP学习-ctf-变异凯撒-chr();ord();substr()" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-21.c++与c-strcpy()与memset()" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      &#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;
+      &#39;c++与c-strcpy()与memset()&#39;
     </h1>
   
 
         
-        <a href="/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" class="archive-article-date">
-  	<time datetime="2018-01-31T06:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
+        <a href="/2018/01/31/21.c++与c-strcpy()与memset()/" class="archive-article-date">
+  	<time datetime="2018-01-31T11:37:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="chr-ord-substr"><a href="#chr-ord-substr" class="headerlink" title="chr();ord();substr();"></a>chr();ord();substr();</h3><p>1.substr();<br>作用：返回字符串的一部分。</p>
-<p>参数：substr(string,start,length);<br>注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">从字符串中返回 <span class="string">"world"</span>：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> substr(<span class="string">"Hello world"</span>,6);</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//结果：world</span><br></pre></td></tr></table></figure>
-<p>2.ord();<br>作用：返回字符串中第一个字符的 ASCII 值。</p>
-<p>参数：ord(string);</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">返回 <span class="string">"h"</span> 的 ASCII值：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> ord(<span class="string">"h"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> ord(<span class="string">"hello"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//结果：104</span><br><span class="line">		104</span><br></pre></td></tr></table></figure>
-<p>3.chr();<br>作用：从指定 ASCII 值返回字符ASCII 值可被指定为十进制值、八进制值或十六进制值。<br>      八进制值被定义为带前置 0，十六进制值被定义为带前置 0x。</p>
-<p>参数：chr(ascii) </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">从不同 ASCII 值返回字符：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> chr(52) . <span class="string">"&lt;br&gt;"</span>; // Decimal value</span><br><span class="line"><span class="built_in">echo</span> chr(052) . <span class="string">"&lt;br&gt;"</span>; // Octal value</span><br><span class="line"><span class="built_in">echo</span> chr(0x52) . <span class="string">"&lt;br&gt;"</span>; // Hex value</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="ctf-变异凯撒"><a href="#ctf-变异凯撒" class="headerlink" title="ctf-变异凯撒"></a>ctf-变异凯撒</h3><p>加密密文：afZ_r9VYfScOeO_UL^RWUc;<br>格式：flag{ };</p>
-<p>  这道题的密码表是ASCII表，通过观察前五个字符的规律可以得到加密后的密文是f-5=a，l-f=6。。。<br>  这样的规律，每两个对应字符之间的ASCII差值逐渐增大，增量为1 ;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">     <span class="keyword">function</span> decode(<span class="variable">$str</span>)&#123;</span><br><span class="line">         <span class="variable">$finish</span>=<span class="string">''</span>;</span><br><span class="line">         <span class="keyword">for</span>(<span class="variable">$_O</span>=5;<span class="variable">$_O</span>&lt;strlen(<span class="variable">$str</span>)+5;<span class="variable">$_O</span>++)&#123;</span><br><span class="line">             <span class="variable">$_c</span>=substr(<span class="variable">$str</span>,<span class="variable">$_O</span>-5,1);				//截取单个字符</span><br><span class="line">             <span class="variable">$__</span>=ord(<span class="variable">$_c</span>)+<span class="variable">$_O</span>;						//将截取的字符转换ascll码,位移</span><br><span class="line">             <span class="variable">$_c</span>=chr(<span class="variable">$__</span>);							//转换ascll</span><br><span class="line">             <span class="variable">$finish</span>=<span class="variable">$finish</span>.<span class="variable">$_c</span>;					//将修改后的字符拼接</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="built_in">return</span> <span class="variable">$finish</span>;</span><br><span class="line">     &#125;</span><br><span class="line"><span class="variable">$p</span>=decode(<span class="string">"afZ_r9VYfScOeO_UL^RWUc"</span>);</span><br><span class="line"><span class="built_in">print</span> <span class="variable">$p</span>;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+        <p>来源：菜鸟教程</p>
+<h3 id="strcpy"><a href="#strcpy" class="headerlink" title="strcpy()"></a>strcpy()</h3><p>1.C 标准库 - <string.h><br>2.描述<br>    C 库函数 char <em>strcpy(char </em>dest, const char <em>src) 把 src 所指向的字符串复制到 dest。<br>2.声明<br>    下面是 strcpy() 函数的声明。<br>    char </em>strcpy(char <em>dest, const char </em>src)<br>3.参数<br>    dest – 指向用于存储复制内容的目标数组。<br>    src – 要复制的字符串。<br>4.返回<br>    该函数返回一个指向最终的目标字符串 dest 的指针。<br>5.实例<br>下面的实例演示了 strcpy() 函数的用法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   char src[40];</span><br><span class="line">   char dest[100];</span><br><span class="line">  </span><br><span class="line">   memset(dest, <span class="string">'\0'</span>, sizeof(dest));</span><br><span class="line">   strcpy(src, <span class="string">"This is runoob.com"</span>);</span><br><span class="line">   strcpy(dest, src);</span><br><span class="line"></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"最终的目标字符串： %s\n"</span>, dest);</span><br><span class="line">   </span><br><span class="line">   <span class="built_in">return</span>(0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></string.h></p>
+<p>让我们编译并运行上面的程序，这将产生以下结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最终的目标字符串： This is runoob.com</span><br></pre></td></tr></table></figure></p>
+<h3 id="memset"><a href="#memset" class="headerlink" title="memset()"></a>memset()</h3><p>1.C 标准库 - <string.h><br>2.描述<br>    C 库函数 void <em>memset(void </em>str, int c, size_t n) 复制字符 c（一个无符号字符）到参数 str 所指向的字符串的前 n 个字符。<br>    声明<br>    下面是 memset() 函数的声明。<br>    void <em>memset(void </em>str, int c, size_t n)<br>3.参数<br>    str – 指向要填充的内存块。<br>    c – 要被设置的值。该值以 int 形式传递，但是函数在填充内存块时是使用该值的无符号字符形式。<br>    n – 要被设置为该值的字节数。<br>4.返回值<br>    该值返回一个指向存储区 str 的指针。<br>5.实例<br>下面的实例演示了 memset() 函数的用法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"></span><br><span class="line">int main ()</span><br><span class="line">&#123;</span><br><span class="line">   char str[50];</span><br><span class="line"></span><br><span class="line">   strcpy(str,<span class="string">"This is string.h library function"</span>);</span><br><span class="line">   puts(str);</span><br><span class="line"></span><br><span class="line">   memset(str,<span class="string">'$'</span>,7);</span><br><span class="line">   puts(str);</span><br><span class="line">   </span><br><span class="line">   <span class="built_in">return</span>(0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></string.h></p>
+<p>让我们编译并运行上面的程序，这将产生以下结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is string.h library <span class="keyword">function</span></span><br><span class="line">$$$$$$$ string.h library <span class="keyword">function</span></span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -251,7 +245,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/31/21.c++与c-strcpy()与memset()/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,18 +259,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/31/21.c++与c-strcpy()与memset()/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          &#39;c++与c-strcpy()与memset()&#39;
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/01/27/19.PHP学习-POST、Cookie、Session/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">&#39;PHP学习-POST、Cookie、Session&#39;</div>
+    <a href="/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;</div>
       <i class="icon-circle-right"></i>
     </a>
   

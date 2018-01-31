@@ -6,18 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39; | Cookie-hunter&#39;s blog</title>
+  <title>Archives: 2018/1 | Cookie-hunter&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
-<meta property="og:type" content="article">
-<meta property="og:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
-<meta property="og:url" content="http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Cookie-hunter&#39;s blog">
+<meta property="og:url" content="http://yoursite.com/archives/2018/01/page/3/index.html">
 <meta property="og:site_name" content="Cookie-hunter&#39;s blog">
-<meta property="og:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
-<meta property="og:updated_time" content="2018-01-31T06:17:57.697Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;">
-<meta name="twitter:description" content="chr();ord();substr();1.substr();作用：返回字符串的一部分。 参数：substr(string,start,length);注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。 12345678从字符串中返回 &quot;world&quot;：&amp;lt;?phpecho substr(&quot;Hello world&quot;,6);?&amp;gt;//结果：">
+<meta name="twitter:title" content="Cookie-hunter&#39;s blog">
   
     <link rel="alternative" href="/atom.xml" title="Cookie-hunter&#39;s blog" type="application/atom+xml">
   
@@ -141,174 +137,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-20.PHP学习-ctf-变异凯撒-chr();ord();substr()" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      &#39;PHP学习-ctf-变异凯撒-chr();ord();substr()&#39;
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/01/20/1.hello-world/" class="archive-article-date">
+  	<time datetime="2018-01-20T03:31:18.626Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/01/20/1.hello-world/">Hello World</a>
     </h1>
   
 
-        
-        <a href="/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" class="archive-article-date">
-  	<time datetime="2018-01-31T06:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="chr-ord-substr"><a href="#chr-ord-substr" class="headerlink" title="chr();ord();substr();"></a>chr();ord();substr();</h3><p>1.substr();<br>作用：返回字符串的一部分。</p>
-<p>参数：substr(string,start,length);<br>注释：如果 start 参数是负数且 length 小于或等于 start，则 length 为 0。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">从字符串中返回 <span class="string">"world"</span>：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> substr(<span class="string">"Hello world"</span>,6);</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//结果：world</span><br></pre></td></tr></table></figure>
-<p>2.ord();<br>作用：返回字符串中第一个字符的 ASCII 值。</p>
-<p>参数：ord(string);</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">返回 <span class="string">"h"</span> 的 ASCII值：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> ord(<span class="string">"h"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="built_in">echo</span> ord(<span class="string">"hello"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//结果：104</span><br><span class="line">		104</span><br></pre></td></tr></table></figure>
-<p>3.chr();<br>作用：从指定 ASCII 值返回字符ASCII 值可被指定为十进制值、八进制值或十六进制值。<br>      八进制值被定义为带前置 0，十六进制值被定义为带前置 0x。</p>
-<p>参数：chr(ascii) </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">从不同 ASCII 值返回字符：</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">echo</span> chr(52) . <span class="string">"&lt;br&gt;"</span>; // Decimal value</span><br><span class="line"><span class="built_in">echo</span> chr(052) . <span class="string">"&lt;br&gt;"</span>; // Octal value</span><br><span class="line"><span class="built_in">echo</span> chr(0x52) . <span class="string">"&lt;br&gt;"</span>; // Hex value</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="ctf-变异凯撒"><a href="#ctf-变异凯撒" class="headerlink" title="ctf-变异凯撒"></a>ctf-变异凯撒</h3><p>加密密文：afZ_r9VYfScOeO_UL^RWUc;<br>格式：flag{ };</p>
-<p>  这道题的密码表是ASCII表，通过观察前五个字符的规律可以得到加密后的密文是f-5=a，l-f=6。。。<br>  这样的规律，每两个对应字符之间的ASCII差值逐渐增大，增量为1 ;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">     <span class="keyword">function</span> decode(<span class="variable">$str</span>)&#123;</span><br><span class="line">         <span class="variable">$finish</span>=<span class="string">''</span>;</span><br><span class="line">         <span class="keyword">for</span>(<span class="variable">$_O</span>=5;<span class="variable">$_O</span>&lt;strlen(<span class="variable">$str</span>)+5;<span class="variable">$_O</span>++)&#123;</span><br><span class="line">             <span class="variable">$_c</span>=substr(<span class="variable">$str</span>,<span class="variable">$_O</span>-5,1);				//截取单个字符</span><br><span class="line">             <span class="variable">$__</span>=ord(<span class="variable">$_c</span>)+<span class="variable">$_O</span>;						//将截取的字符转换ascll码,位移</span><br><span class="line">             <span class="variable">$_c</span>=chr(<span class="variable">$__</span>);							//转换ascll</span><br><span class="line">             <span class="variable">$finish</span>=<span class="variable">$finish</span>.<span class="variable">$_c</span>;					//将修改后的字符拼接</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="built_in">return</span> <span class="variable">$finish</span>;</span><br><span class="line">     &#125;</span><br><span class="line"><span class="variable">$p</span>=decode(<span class="string">"afZ_r9VYfScOeO_UL^RWUc"</span>);</span><br><span class="line"><span class="built_in">print</span> <span class="variable">$p</span>;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/01/31/20.PHP学习-ctf-变异凯撒-chr();ord();substr()/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/01/31/21.c++与c-strcpy()与memset()/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          &#39;c++与c-strcpy()与memset()&#39;
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/01/27/19.PHP学习-POST、Cookie、Session/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">&#39;PHP学习-POST、Cookie、Session&#39;</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2018/01/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/2018/01/">1</a><a class="page-number" href="/archives/2018/01/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
 
 
@@ -332,8 +206,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

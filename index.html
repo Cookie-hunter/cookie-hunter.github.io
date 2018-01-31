@@ -139,6 +139,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-21.c++与c-strcpy()与memset()" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/31/21.c++与c-strcpy()与memset()/">&#39;c++与c-strcpy()与memset()&#39;</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/31/21.c++与c-strcpy()与memset()/" class="archive-article-date">
+  	<time datetime="2018-01-31T11:37:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>来源：菜鸟教程</p>
+<h3 id="strcpy"><a href="#strcpy" class="headerlink" title="strcpy()"></a>strcpy()</h3><p>1.C 标准库 - <string.h><br>2.描述<br>    C 库函数 char <em>strcpy(char </em>dest, const char <em>src) 把 src 所指向的字符串复制到 dest。<br>2.声明<br>    下面是 strcpy() 函数的声明。<br>    char </em>strcpy(char <em>dest, const char </em>src)<br>3.参数<br>    dest – 指向用于存储复制内容的目标数组。<br>    src – 要复制的字符串。<br>4.返回<br>    该函数返回一个指向最终的目标字符串 dest 的指针。<br>5.实例<br>下面的实例演示了 strcpy() 函数的用法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   char src[40];</span><br><span class="line">   char dest[100];</span><br><span class="line">  </span><br><span class="line">   memset(dest, <span class="string">'\0'</span>, sizeof(dest));</span><br><span class="line">   strcpy(src, <span class="string">"This is runoob.com"</span>);</span><br><span class="line">   strcpy(dest, src);</span><br><span class="line"></span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">"最终的目标字符串： %s\n"</span>, dest);</span><br><span class="line">   </span><br><span class="line">   <span class="built_in">return</span>(0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></string.h></p>
+<p>让我们编译并运行上面的程序，这将产生以下结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最终的目标字符串： This is runoob.com</span><br></pre></td></tr></table></figure></p>
+<h3 id="memset"><a href="#memset" class="headerlink" title="memset()"></a>memset()</h3><p>1.C 标准库 - <string.h><br>2.描述<br>    C 库函数 void <em>memset(void </em>str, int c, size_t n) 复制字符 c（一个无符号字符）到参数 str 所指向的字符串的前 n 个字符。<br>    声明<br>    下面是 memset() 函数的声明。<br>    void <em>memset(void </em>str, int c, size_t n)<br>3.参数<br>    str – 指向要填充的内存块。<br>    c – 要被设置的值。该值以 int 形式传递，但是函数在填充内存块时是使用该值的无符号字符形式。<br>    n – 要被设置为该值的字节数。<br>4.返回值<br>    该值返回一个指向存储区 str 的指针。<br>5.实例<br>下面的实例演示了 memset() 函数的用法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"></span><br><span class="line">int main ()</span><br><span class="line">&#123;</span><br><span class="line">   char str[50];</span><br><span class="line"></span><br><span class="line">   strcpy(str,<span class="string">"This is string.h library function"</span>);</span><br><span class="line">   puts(str);</span><br><span class="line"></span><br><span class="line">   memset(str,<span class="string">'$'</span>,7);</span><br><span class="line">   puts(str);</span><br><span class="line">   </span><br><span class="line">   <span class="built_in">return</span>(0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></string.h></p>
+<p>让我们编译并运行上面的程序，这将产生以下结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is string.h library <span class="keyword">function</span></span><br><span class="line">$$$$$$$ string.h library <span class="keyword">function</span></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/31/21.c++与c-strcpy()与memset()/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-20.PHP学习-ctf-变异凯撒-chr();ord();substr()" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -849,75 +916,9 @@ png2wbmp — 将 PNG 图像文件转换为 WBMP 图像文件
 
 
   
-    <article id="post-11.PHP学习-include &amp; require" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/21/11.PHP学习-include & require/">&#39;PHP学习-include &amp; require&#39;</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/21/11.PHP学习-include & require/" class="archive-article-date">
-  	<time datetime="2018-01-21T12:28:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="include与require的区别："><a href="#include与require的区别：" class="headerlink" title="include与require的区别："></a>include与require的区别：</h3><p>include 与 require都是用来引用文件，但二者之间存在差异；<br>从字面理解，一个是“包含”而另一个是“要求”，<br>因而可以看出他们对所引用的文件的依赖程度是不同的；<br>当缺失该文件时include表现为警告，而require表现为错误；</p>
-<h3 id="include-amp-require-PHP文件的引用"><a href="#include-amp-require-PHP文件的引用" class="headerlink" title="include &amp; require :PHP文件的引用"></a>include &amp; require :PHP文件的引用</h3><p>一.新建一文件夹，其下新建两个PHP文件：<br>1.index.PHP;<br>2.lib.PHP;</p>
-<p>二.lib.PHP内书写函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">sayHello</span></span>()&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'Hello PHP'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>三..index.PHP内分别书写    require ‘lib.PHP’;    include ‘lib.PHP’;<br>    分别调用查看实验结果；<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">//require <span class="string">'lib.PHP'</span>;				//require方式</span><br><span class="line">include <span class="string">'lib.PHP'</span>;					//include方式</span><br><span class="line">sayHello();</span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/21/11.PHP学习-include & require/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
