@@ -712,27 +712,31 @@
 
 
   
-    <article id="post-2.主题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-22.Python学习-input()函数与raw_input()函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/2.主题/">&#39;主题&#39;</a>
+      <a class="article-title" href="/2018/01/20/22.Python学习-input()函数与raw_input()函数/">&#39;Python学习-input()函数与raw_input()函数&#39;</a>
     </h1>
   
 
         
-        <a href="/2018/01/20/2.主题/" class="archive-article-date">
-  	<time datetime="2018-01-20T03:34:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
+        <a href="/2018/01/20/22.Python学习-input()函数与raw_input()函数/" class="archive-article-date">
+  	<time datetime="2018-01-20T08:23:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>完成主题修改</p>
+        <p>###input()函数与raw_input()函数</p>
+<p>##区别<br>python raw_input() 用来获取控制台的输入。</p>
+<p>raw_input() 将所有输入作为字符串看待，返回字符串类型。</p>
+<p>input() 和 raw_input() 这两个函数均能接收 字符串 ，<br>但 raw_input() 直接读取控制台的输入（任何类型的输入它都可以接收）。<br>而对于 input() ，它希望能够读取一个合法的 python 表达式，<br>即你输入字符串的时候必须使用引号将它括起来，否则它会引发一个 SyntaxError 。</p>
+<p>##实例<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">raw_input() 将所有输入作为字符串看待</span><br><span class="line">&gt;&gt;&gt;a = raw_input(<span class="string">"input:"</span>)</span><br><span class="line">input:123</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="built_in">type</span> <span class="string">'str'</span>&gt;              <span class="comment"># 字符串</span></span><br><span class="line">&gt;&gt;&gt; a = raw_input(<span class="string">"input:"</span>)</span><br><span class="line">input:runoob</span><br><span class="line">&gt;&gt;&gt; <span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="built_in">type</span> <span class="string">'str'</span>&gt;              <span class="comment"># 字符串</span></span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">input() 需要输入 python 表达式</span><br><span class="line">&gt;&gt;&gt;a = input(<span class="string">"input:"</span>)</span><br><span class="line">input:123                  <span class="comment"># 输入整数</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="built_in">type</span> <span class="string">'int'</span>&gt;               <span class="comment"># 整型</span></span><br><span class="line">&gt;&gt;&gt; a = input(<span class="string">"input:"</span>)    </span><br><span class="line">input:<span class="string">"runoob"</span>           <span class="comment"># 正确，字符串表达式</span></span><br><span class="line">&gt;&gt;&gt; <span class="built_in">type</span>(a)</span><br><span class="line">&lt;<span class="built_in">type</span> <span class="string">'str'</span>&gt;             <span class="comment"># 字符串</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; a = input(<span class="string">"input:"</span>)</span><br><span class="line">input:runoob               <span class="comment"># 报错，不是表达式</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line 1, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">  File <span class="string">"&lt;string&gt;"</span>, line 1, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">NameError: name <span class="string">'runoob'</span> is not defined</span><br><span class="line">&lt;<span class="built_in">type</span> <span class="string">'str'</span>&gt;</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -745,7 +749,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/2.主题/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/20/22.Python学习-input()函数与raw_input()函数/">展开全文 >></a>
         </p>
       
 
